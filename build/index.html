@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <title><%= htmlWebpackPlugin.options.title %></title>
@@ -25,7 +25,7 @@
       <div class="city-card" v-for="city in cities">
         <div class="city-card__content">
           <div class="city-card__content__status-icon"
-               style="background-image: url('//cdn.apixu.com/weather/64x64/night/113.png')"></div>
+               v-bind:style="{ 'background-image': 'url(' + city.icon + ')' }"></div>
           <div class="city-card__content__condition">{{ city.condition }}</div>
           <div class="city-card__content__temperature">{{ city.temp }}°C</div>
           <div class="city-card__content__title">{{ city.name }}</div>
