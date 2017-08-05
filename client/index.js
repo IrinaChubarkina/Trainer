@@ -25,5 +25,10 @@ const app = new Vue({
             },
         ],
         foundedCities: []
+    },
+    methods: {
+        removeFromFav: function (value) {
+            // Метод удаления написать самим
+        }
     }
 });
