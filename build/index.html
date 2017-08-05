@@ -14,15 +14,9 @@
              type="search"
              placeholder="Search city"
       >
-      <div class="search-panel__list">
-        <div class="search-panel__list__item">
-          Пермь
-        </div>
-        <div class="search-panel__list__item">
-          Москва
-        </div>
-        <div class="search-panel__list__item">
-          Санкт-Петербург
+      <div class="search-panel__list" v-if="foundedCities.length > 0">
+        <div class="search-panel__list__item" v-for="city in foundedCities">
+          {{ city.name }}
         </div>
       </div>
     </div>

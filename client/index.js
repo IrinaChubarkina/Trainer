@@ -23,6 +23,7 @@ const app = new Vue({
                 condition: 'Light rain shower',
                 icon: '//cdn.apixu.com/weather/64x64/day/353.png'
             },
-        ]
+        ],
+        foundedCities: []
     }
 });
