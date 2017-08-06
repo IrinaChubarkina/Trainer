@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import list from './components/list/list';
+import store from './store';
 
 const app = new Vue({
     components: {
@@ -23,7 +24,8 @@ const app = new Vue({
                 <list></list>
             </div>
         );
-    }
+    },
+    store
 });
 
 export { app }

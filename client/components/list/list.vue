@@ -43,10 +43,6 @@
             removeFromFav: function (value) {
                 this.cities.splice(this.cities.indexOf(value), 1);
             }
-        },
-        mounted: function () {
-            console.log('mounted');
-            console.log(this);
         }
     }
 </script>
