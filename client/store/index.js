@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import {DELETE_CITY} from './mutation-types';
+import {ADD_CITY} from './action-types';
 
 Vue.use(Vuex);
 
@@ -34,7 +35,21 @@ const mutations = {
 };
 
 const actions = {
-    addCity ({commit}) {
+    [ADD_CITY] ({state}, city) {
+        const addCity =  new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({
+                    name: 'Самара',
+                    temp: '-17',
+                    condition: 'Snow',
+                    icon: '//cdn.apixu.com/weather/64x64/night/113.png'
+                });
+            }, 300);
+        });
+
+        addCity.then((res) => {
+            state.favouriteCityList.push(res);
+        });
     }
 };
 
