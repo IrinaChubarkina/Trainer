@@ -11,13 +11,15 @@ const state = {
         children: [
             {
                 name: 'Приседания',
-                image: '',
-                description: ''
+                image: 'http://econet.ru/uploads/pictures/271304/content_14__econet_ru.jpg',
+                description: 'Обычные приседания улучшают состояние всех мышц ног. Опускайтесь так низко, насколько можете.',
+                is_fav: false
             },
             {
                 name: 'Выпады',
-                image: '',
-                description: ''
+                image: 'http://upraznenia.ru/wp-content/uploads/2017/01/jagod001.jpg',
+                description: '',
+                is_fav: true
             }
         ]
     },
@@ -49,14 +51,24 @@ const state = {
 ] };
 
 const mutations = {
-    // removeCity(state,city) {
-    //     state.favouriteCityList.splice(state.favouriteCityList.indexOf(city), 1);
-    // }
+    addToFavourite (state, {id, section}) {
+        const parent = state.sectionList[id];
+        const current = parent.children[parent.children.indexOf(section)];
+
+        current.is_fav = !current.is_fav;
+    }
+};
+
+const actions = {
+    addToFavourite ({commit}, {id, section}) {
+        commit('addToFavourite', {id, section});
+    }
 };
 
 const store = new Vuex.Store({
-    state
-    /*,mutations*/
+    state,
+    mutations,
+    actions
 });
 
 

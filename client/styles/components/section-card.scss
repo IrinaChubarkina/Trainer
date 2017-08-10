@@ -5,20 +5,53 @@
   flex-shrink: 0;
 
   &__content {
+    position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
     text-decoration: none;
     display: block;
     color: inherit;
-    padding: 60px 60px;
+    padding: 60px;
     height: 380px;
     border-radius: 20px;
+    overflow: hidden;
     transition: background ease-in-out 150ms;
+
+
+    &__description {
+      font-size: 14px;
+    }
 
     &:hover {
       background: rgba(0, 0, 0, 0.03);
     }
 
-    &__status-icon {
+    &__fav {
+      background-image: url('/heart.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 24px;
+      height: 24px;
+      filter: grayscale(100%);
+      cursor: pointer;
+
+      &--active {
+        filter: grayscale(0);
+      }
+    }
+
+    &__image {
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: -60px -60px 20px -60px;
+      height: 170px;
+
+    }
+
+    &__icon {
       display: block;
       margin: 0 auto 10px auto;
       width: 64px;
@@ -26,38 +59,11 @@
       border-radius: 50%;
     }
 
-    &__condition {
-      margin-bottom: 20px;
-      font-weight: 300;
-      font-size: 14px;
-      min-height: 22px;
-    }
-
-    &__temperature {
-      margin-bottom: 20px;
-      font-size: 48px;
-    }
-
     &__title {
       line-height: normal;
       font-weight: 300;
       font-size: 24px;
-    }
-  }
-
-  &__remove {
-    background: transparent;
-    border: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    font-weight: 300;
-    font-size: 12px;
-    color: #4362ff;
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: underline;
-      color: #689dff;
+      margin-bottom: 20px;
     }
   }
 }
