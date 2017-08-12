@@ -1,25 +1,15 @@
 import Vue from 'vue';
-import List from './components/list/list.vue';
-import ListDetails from './components/details/list-details.vue';
 import store from './store/store';
+import { sync } from 'vuex-router-sync';
+import router from './router';
+import App from './components/App';
 
-
+sync(store, router);
 
 const app = new Vue({
-    components: {
-        List, ListDetails
-    },
-    render(h) {
-        return (
-            <div class="container">
-                <h1 class="page__title">Trainer</h1>
-                <list></list>
-                <list-details></list-details>
-            </div>
-            
-        )
-    },
-    store
+    router,
+    store,
+    ...App
 });
 
-export {app}
+export { app, router, store }

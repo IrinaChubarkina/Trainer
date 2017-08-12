@@ -1,0 +1,48 @@
+{
+  "sections": [
+    {
+      "id": 1,
+      "name": "Попка",
+      "image": "//cdn.apixu.com/weather/64x64/night/113.png"
+    },
+    {
+      "id": 2,
+      "name": "Ноги",
+      "image": "//cdn.apixu.com/weather/64x64/night/113.png"
+    },
+    {
+      "id": 3,
+      "name": "Пресс",
+      "image": "//cdn.apixu.com/weather/64x64/night/113.png"
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2,
+      "sectionId": 1,
+      "name": "Выпады",
+      "image": "http://upraznenia.ru/wp-content/uploads/2017/01/jagod001.jpg",
+      "description": "",
+      "is_fav": true
+    },
+    {
+      "id": 3,
+      "sectionId": 2,
+      "name": "Выпады 12312331",
+      "image": "http://upraznenia.ru/wp-content/uploads/2017/01/jagod001.jpg",
+      "description": "",
+      "is_fav": false
+    },
+    {
+      "id": 4,
+      "sectionId": 3,
+      "name": "Скручивания",
+      "image": "",
+      "description": "",
+      "is_fav": true
+    }
+  ]
+}

@@ -17,18 +17,21 @@
 
 
 <script>
-    const id = 0;
+
 
     export default {
         methods: {
-            addToFav: function (section) {
-                this.$store.dispatch('addToFavourite', {id, section});
+            addToFav: function (exercises) {                
+                this.$store.dispatch('addToFavourite', {id: this.$route.params.id, exercises});
             }
         },
         computed:{
             getDetails() {
-                return this.$store.state.sectionList[id].children;
+                return this.$store.state.details;
             }
+        },
+        mounted() {
+            this.$store.dispatch('getDetails', this.$route.params.id);
         }
     }
 </script>
