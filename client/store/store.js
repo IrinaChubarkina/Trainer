@@ -6,6 +6,7 @@ Vue.use(Vuex);
 
 const state = {
     sectionList: [], 
+    favouriteSectionList: [],
     details: []
 };
 
@@ -17,8 +18,11 @@ const mutations = {
         state.details = data;
     },
     addToFavourite (state, {id, exercises}) {
-
-    }
+    },
+    setFavouriteSections (state, data) {
+        state.favouriteSectionList = data;
+        
+    },
 };
 
 const actions = {
@@ -37,6 +41,12 @@ const actions = {
 
         api.update (id, exercises, (res) => {
             commit('addToFavourite', res.data);
+        })
+    },
+    getFavouriteSections ({commit}) {
+        api.getFavouriteSections ((res) => {
+            console.log( res.data);
+            commit('setFavouriteSections', res.data);
         })
     }
 };
@@ -57,6 +67,12 @@ const api = {
     update: (id, exercises, resolve, reject) => {
         axios
             .put(`http://localhost:3000/exercises/${exercises.id}`, exercises)
+            .then(resolve)
+            .catch(reject);
+    },
+    getFavouriteSections: (resolve, reject) => {
+        axios
+            .get(`http://localhost:3000/exercises?is_fav=true`)
             .then(resolve)
             .catch(reject);
     },

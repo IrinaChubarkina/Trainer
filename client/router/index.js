@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import List from './../components/list/list.vue';
 import ListDetails from './../components/details/list-details.vue';
+import Fav from './../components/favourites/favourites.vue';
 
 Vue.use(Router);
 
@@ -13,9 +14,14 @@ export default new Router({
             component: List
         },
          {
-             name: 'section',
+            name: 'section',
             path: '/section/:id',
             component: ListDetails
+        },
+         {
+            name: 'fav',
+            path: '/fav',
+            component: Fav
         },
     ]
 });

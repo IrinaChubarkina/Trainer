@@ -3,44 +3,49 @@
     {
       "id": 1,
       "name": "Попка",
-      "image": "//cdn.apixu.com/weather/64x64/night/113.png"
+      "image": "http://wefit.ru/wp-content/uploads/2015/05/Fotolia_85843406_Subscription_Monthly_M.jpg"
     },
     {
       "id": 2,
       "name": "Ноги",
-      "image": "//cdn.apixu.com/weather/64x64/night/113.png"
+      "image": "http://womanadvice.ru/sites/default/files/27/articles_main_big/2017-04-27_2308/zhim_nogami_v_trenazhere.jpg"
     },
     {
       "id": 3,
       "name": "Пресс",
-      "image": "//cdn.apixu.com/weather/64x64/night/113.png"
+      "image": "http://legkopolezno.ru/wp-content/uploads/2016/08/uprazhneniya-na-press-dlya-devushek-v-trenazhernom-zale.jpg"
     }
   ],
   "exercises": [
     {
-      "id": 1
+      "id": 1,
+      "sectionId": 1,
+      "name": "Приседания",
+      "image": "https://www.sympaty.net/wp-content/uploads/2017/02/kak-nakachat-yagodicy-devushke.jpg",
+      "description": "Спина прогнута, лопатки сведены вместе. Пятки плотно прижаты к полу. Колени разведены на расстояние, равное ширине плеч. Также они не должны выйти за условную линию стопы.",
+      "is_fav": false
     },
     {
       "id": 2,
       "sectionId": 1,
       "name": "Выпады",
-      "image": "http://upraznenia.ru/wp-content/uploads/2017/01/jagod001.jpg",
-      "description": "",
-      "is_fav": true
+      "image": "https://budopt.ua/image/data/article/record/44/lunges.jpg.pagespeed.ce.B9GFgN_9gw.jpg",
+      "description": "Спина прямая, лопатки сведены. Шаг вперед правой ногой. Бедро правой ноги параллельно полу, а левое колено — едва касается пола.",
+      "is_fav": false
     },
     {
       "id": 3,
       "sectionId": 2,
-      "name": "Выпады 12312331",
-      "image": "http://upraznenia.ru/wp-content/uploads/2017/01/jagod001.jpg",
+      "name": "Жим ногами лежа",
+      "image": "http://womanadvice.ru/sites/default/files/27/articles_main_big/2017-04-27_2308/zhim_nogami_v_trenazhere.jpg",
       "description": "",
-      "is_fav": false
+      "is_fav": true
     },
     {
       "id": 4,
       "sectionId": 3,
-      "name": "Скручивания",
-      "image": "",
+      "name": "Двойные скручивания",
+      "image": "http://upraznenia.ru/wp-content/uploads/dv-sk2.jpg",
       "description": "",
       "is_fav": true
     }
