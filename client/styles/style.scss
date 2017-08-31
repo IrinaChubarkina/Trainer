@@ -9,37 +9,42 @@
 }
 
 body {
-    background-image: url("http://fonforsite.ru/_ph/3/2/707209946.png?1502667752");
+    background-color: dimgray;
+    background-image: url("http://pattern4site.ru/images/leather/_thumb/9-fon-dlya-sayta.jpg");
     font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', Ubuntu, 'segoe ui', arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
 }
 
-h1 {
+
+/*h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', Ubuntu, 'segoe ui', arial, sans-serif;
     font-size: 80px;
     line-height: 1.6;
-}
+}*/
 
 .container {
-    background-color: white;
+    background-color: #A49C91;
     margin: 0 auto;
     max-width: 1024px;
     height: 100vh;
     padding: 25px;
+    /*bottom: 0;*/
+
 }
 
 .fav {
 
 
     a {
-        background-color: red;
+        background-color: beige;
         position: relative ;
+        border: 1px solid dimgray;
         text-align: center;
         display: block;
         padding: 15px;
         width: 200px;
-        color: #FFFFFF;
+        color: black;
         margin: 0 auto 30px auto;
         border-radius: 5px;
         

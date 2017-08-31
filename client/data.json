@@ -22,14 +22,14 @@
       "sectionId": 1,
       "name": "Приседания",
       "image": "https://www.sympaty.net/wp-content/uploads/2017/02/kak-nakachat-yagodicy-devushke.jpg",
-      "description": "Спина прогнута, лопатки сведены вместе. Пятки плотно прижаты к полу. Колени разведены на расстояние, равное ширине плеч. Также они не должны выйти за условную линию стопы.",
-      "is_fav": false
+      "description": "Спина прогнута, лопатки сведены вместе. Пятки плотно прижаты к полу. Колени на ширине плеч, не выходят за условную линию стопы.",
+      "is_fav": true
     },
     {
       "id": 2,
       "sectionId": 1,
       "name": "Выпады",
-      "image": "https://budopt.ua/image/data/article/record/44/lunges.jpg.pagespeed.ce.B9GFgN_9gw.jpg",
+      "image": "https://budopt.ua/image/data/article/record/44/lunges.jpg",
       "description": "Спина прямая, лопатки сведены. Шаг вперед правой ногой. Бедро правой ноги параллельно полу, а левое колено — едва касается пола.",
       "is_fav": false
     },
@@ -38,15 +38,31 @@
       "sectionId": 2,
       "name": "Жим ногами лежа",
       "image": "http://womanadvice.ru/sites/default/files/27/articles_main_big/2017-04-27_2308/zhim_nogami_v_trenazhere.jpg",
-      "description": "",
+      "description": "Ноги на ширине плеч в середине платформы. Подать ее вперед, а вниз опускать до угла 90° в коленном суставе.",
       "is_fav": true
     },
     {
       "id": 4,
+      "sectionId": 2,
+      "name": "Приседания со штангой",
+      "image": "http://muskul.pro/wp-content/uploads/2016/02/prisedaniya_so_shtangoy_1.jpg",
+      "description": "Ноги шире плеч, спина прямая, взгляд вперед. Приседая, отводить таз назад, колени не сдвигать, пятки от пола не отрывать.",
+      "is_fav": false
+    },
+    {
+      "id": 5,
       "sectionId": 3,
       "name": "Двойные скручивания",
       "image": "http://upraznenia.ru/wp-content/uploads/dv-sk2.jpg",
-      "description": "",
+      "description": "Поясница прижата к полу. На выдохе подтянуть таз и грудь друг к другу. Напрягать мышцы живота. Не давить на голову.",
+      "is_fav": false
+    },
+    {
+      "id": 6,
+      "sectionId": 3,
+      "name": "Классическая планка",
+      "image": "http://bodybuilding-and-fitness.ru/wp-content/uploads/2016/03/xplanka-uprazhnenie.jpg.pagespeed.ic.nE1ow_4tpv.jpg",
+      "description": "Классическая планка с опорой на локти. Выполнять 30-60 секунд. Можно поднимать поочередно ноги.",
       "is_fav": true
     }
   ]

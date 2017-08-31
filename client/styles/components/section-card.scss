@@ -5,9 +5,9 @@
   flex-shrink: 0;
 
   &__content {
-    background-color: white;
+    background-color: beige;
     position: relative;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 0.5px solid dimgray;
     text-decoration: none;
     display: block;
     color: inherit;
@@ -15,7 +15,7 @@
     height: 450px;
     border-radius: 20px;
     overflow: hidden;
-    transition: background ease-in-out 150ms;
+    /*transition: background ease-in-out 150ms;*/
 
 
     &__description {
