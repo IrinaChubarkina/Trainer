@@ -13,7 +13,7 @@ export default new Router({
             path: '/',
             component: List
         },
-         {
+        {
             name: 'section',
             path: '/section/:id',
             component: ListDetails

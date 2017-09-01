@@ -8,7 +8,8 @@
                 <router-link :to="{ name: 'section', params: { id: section.id }}"
                                 class="section-card__content section-card__content--small">
                     <div class="section-card__content__image"
-                        v-bind:style="{ 'background-image': 'url(' + section.image + ')' }"></div>
+                        v-bind:style="{ 'background-image': 'url(' + section.image + ')' }">
+                    </div>
                     <div class="section-card__content__title">{{ section.name }}</div>
                 </router-link>
             </div>

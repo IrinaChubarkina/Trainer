@@ -31,7 +31,7 @@
       "name": "Выпады",
       "image": "https://budopt.ua/image/data/article/record/44/lunges.jpg",
       "description": "Спина прямая, лопатки сведены. Шаг вперед правой ногой. Бедро правой ноги параллельно полу, а левое колено — едва касается пола.",
-      "is_fav": false
+      "is_fav": true
     },
     {
       "id": 3,
@@ -47,7 +47,7 @@
       "name": "Приседания со штангой",
       "image": "http://muskul.pro/wp-content/uploads/2016/02/prisedaniya_so_shtangoy_1.jpg",
       "description": "Ноги шире плеч, спина прямая, взгляд вперед. Приседая, отводить таз назад, колени не сдвигать, пятки от пола не отрывать.",
-      "is_fav": false
+      "is_fav": true
     },
     {
       "id": 5,
@@ -55,7 +55,7 @@
       "name": "Двойные скручивания",
       "image": "http://upraznenia.ru/wp-content/uploads/dv-sk2.jpg",
       "description": "Поясница прижата к полу. На выдохе подтянуть таз и грудь друг к другу. Напрягать мышцы живота. Не давить на голову.",
-      "is_fav": false
+      "is_fav": true
     },
     {
       "id": 6,

@@ -8,7 +8,7 @@ $ npm install
 
 ```bash
 $ npm install -g json-server
-$ json-server —watch cities.json
+$ json-server —watch data.json
 ```
 
 To develop:

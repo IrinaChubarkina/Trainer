@@ -16,26 +16,17 @@ body {
     line-height: 1.6;
 }
 
-
-/*h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', Ubuntu, 'segoe ui', arial, sans-serif;
-    font-size: 80px;
-    line-height: 1.6;
-}*/
-
 .container {
     background-color: #A49C91;
     margin: 0 auto;
+    overflow: auto;
     max-width: 1024px;
-    height: 100vh;
+    min-height: 100vh;
     padding: 25px;
-    /*bottom: 0;*/
 
 }
 
 .fav {
-
-
     a {
         background-color: beige;
         position: relative ;
