@@ -54,25 +54,25 @@ const actions = {
 const api = {
     get: (resolve, reject) => {
         axios
-            .get(`http://localhost:3000/sections`)
+            .get(`https://protected-oasis-66007.herokuapp.com/sections`)
             .then(resolve)
             .catch(reject);
     },
     details: (id, resolve, reject) => {
         axios
-            .get(`http://localhost:3000/sections/${id}/exercises`)
+            .get(`https://protected-oasis-66007.herokuapp.com/sections/${id}/exercises`)
             .then(resolve)
             .catch(reject);
     },
     update: (id, exercises, resolve, reject) => {
         axios
-            .put(`http://localhost:3000/exercises/${exercises.id}`, exercises)
+            .put(`https://protected-oasis-66007.herokuapp.com/exercises/${exercises.id}`, exercises)
             .then(resolve)
             .catch(reject);
     },
     getFavouriteSections: (resolve, reject) => {
         axios
-            .get(`http://localhost:3000/exercises?is_fav=true`)
+            .get(`https://protected-oasis-66007.herokuapp.com/exercises?is_fav=true`)
             .then(resolve)
             .catch(reject);
     },

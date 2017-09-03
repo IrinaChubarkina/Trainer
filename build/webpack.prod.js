@@ -5,7 +5,7 @@ process.env.NODE_ENV = 'production';
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ProgressPlugin = require('webpack/lib/ProgressPlugin');
-const OfflinePlugin = require('offline-plugin');
+// const OfflinePlugin = require('offline-plugin');
 const rm = require('rimraf');
 const base = require('./webpack.base');
 const pkg = require('../package');
@@ -49,16 +49,16 @@ base.plugins.push(
   }),
   new webpack.optimize.CommonsChunkPlugin({
     name: 'manifest'
-  }),
+  })
   // progressive web app
   // it uses the publicPath in webpack config
-  new OfflinePlugin({
-    relativePaths: false,
-    AppCache: false,
-    ServiceWorker: {
-      events: true
-    }
-  })
+  // new OfflinePlugin({
+  //   relativePaths: false,
+  //   AppCache: false,
+  //   ServiceWorker: {
+  //     events: true
+  //   }
+  // })
 );
 
 // extract css in standalone css files
